@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: fastlove
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn fastlove.wsgi:application"
+    plan: free
+    envVars:
+      - key: DEBUG
+        value: False
+      - key: SECRET_KEY
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: 4
+    
+  - type: pserv
+    name: fastlove-db
+    env: postgresql
+    plan: free
+    databaseName: fastlove
+    databaseUser: fastlove
+
+databases:
+  - name: fastlove
+    databaseName: fastlove
+    user: fastlove 

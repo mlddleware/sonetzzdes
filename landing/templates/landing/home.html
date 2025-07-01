@@ -1,0 +1,112 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block content %}
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                        Общение без границ, страхов и предрассудков
+                    </h1>
+                    <p class="hero__descr wow fadeIn" data-wow-delay="1s"
+                       style="visibility: visible; animation-delay: 1s; animation-name: fadeIn;">
+                        Скучно ли вам бывает на паузах или вечерах? Хотите поделиться своим мнением или услышать чужую точку зрения?
+                        Знакомства здесь – это ваш билет в мир знакомств, где каждый лайк – это приглашение к новому опыту.
+                    </p>
+                    <a href="https://t.me/anketa_publish_bot">
+                        <button class="btn-reset hero__btn wow fadeIn" data-wow-delay="1s"
+                                style="visibility: visible; animation-delay: 1s; animation-name: fadeIn;">Начать
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="advantages wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+            <div class="container advantages__container">
+                <h2 class="advantages__title section-title">
+                    Почему выбирают нас?
+                </h2>
+                <div class="advantages__rates">
+                    <div class="rate wow fadeInLeft" data-wow-delay="0.5s"
+                         style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                        <img class="wow fadeIn" src="{% static 'landing/img/couple-chat.svg' %}" alt="rate block image"
+                             aria-hidden="true" data-wow-delay="1s"
+                             style="visibility: hidden; animation-delay: 1s; animation-name: none;">
+                        <div class="rate__content">
+                            <h3 class="rate__title wow fadeInUp" data-wow-delay="0.5s"
+                                style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                                Разнообразие собеседников
+                            </h3>
+                            <ul class="rate__list wow fadeIn" data-wow-delay="0.5s"
+                                style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                                <li class="rate__item">
+                                    Наши пользователи – это люди со всего мира с самыми разными историями и интересами.
+                                    Независимо от того, что вас вдохновляет, здесь всегда найдется кто-то, кто разделит ваше влечение.
+
+                                </li>
+                                <li class="rate__item">
+                                    Общение на Знакомства здесь – это путь к открытию новых горизонтов и обогащению опыта.
+                                    Вы можете обсудить вопросы, которые вас волнуют, услышать непредвзятые мнения и пересмотреть свои взгляды.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rate premium wow fadeInRight" data-wow-delay="0.5s"
+                         style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                        <img class="wow fadeIn" src="{% static 'landing/img/couple.svg' %}" alt="rate block image" aria-hidden="true"
+                             data-wow-delay="1s" style="visibility: hidden; animation-delay: 1s; animation-name: none;">
+                        <div class="rate__content">
+                            <h3 class="rate__title wow fadeInUp" data-wow-delay="0.5s"
+                                style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                                Новые знакомства
+                            </h3>
+                            <ul class="rate__list wow fadeIn" data-wow-delay="0.5s"
+                                style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                                <li class="rate__item premium__item">
+                                    Знакомства здесь – это не просто приложение, это путь к новым и захватывающим знакомствам.
+                                    У нас вы можете столкнуться с людьми, которых вы бы никогда не встретили в повседневной жизни.
+                                    Их истории, опыт и мировоззрение обогатят ваш взгляд на мир.
+
+                                </li>
+                                <li class="rate__item premium__item">
+                                    Смело отправьте первое сообщение и откройте дверь в захватывающие разговоры.
+                                    Вы никогда не знаете, какие удивительные сюжеты могут раскрыться впереди.
+                                    Начните свое путешествие с Знакомства здесь сегодня и встретьте мир новых знакомств!
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts wow fadeInRight" id="contacts" data-wow-delay="1s"
+                 style="visibility: hidden; animation-delay: 1s; animation-name: none;">
+            <div class="container contacts__container">
+                <h2 class="section-title contacts__title">
+                    Контакты
+                </h2>
+                <ul class="list-reset contacts__list">
+                    <li class="contacts__item">
+                        <h3 class="contacts__subtitle">
+                            Режим работы поддержки:
+                        </h3>
+                        <p class="contacts__content">
+                            С понедельника по пятницу, c 10:00 до 18:00
+                        </p>
+                    </li>
+                    <li class="contacts__item">
+                        <h3 class="contacts__subtitle">
+                            Техническая поддержка:
+                        </h3>
+                        <p class="contacts__content">
+                            <a href="https://t.me/botsupportg" class="contacts__link">https://t.me/botsupportg</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- import of html parts -->
+    </main>
+{% endblock %}
