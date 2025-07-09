@@ -33,9 +33,11 @@ RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
+    'zdes.ru',
+    'www.zdes.ru',
     'znakomstvazdes.ru',
     'www.znakomstvazdes.ru',
-    'fastlove.onrender.com',  # Keep Render domain as backup
+    'sonetzzdes.onrender.com',  # Keep Render domain as backup
 ]
 
 if RENDER_EXTERNAL_HOSTNAME:
@@ -44,9 +46,11 @@ if RENDER_EXTERNAL_HOSTNAME:
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost',
     'http://127.0.0.1',
+    'https://zdes.ru',
+    'https://www.zdes.ru',
     'https://znakomstvazdes.ru',
     'https://www.znakomstvazdes.ru',
-    'https://fastlove.onrender.com',  # Keep Render domain as backup
+    'https://sonetzzdes.onrender.com',  # Keep Render domain as backup
 ]
 
 if RENDER_EXTERNAL_HOSTNAME:
